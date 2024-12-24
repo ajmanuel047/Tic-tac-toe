@@ -4,7 +4,7 @@ h1 {
     margin-top: 10px;
 }
 
-#gameboard {
+/* #gameboard {
     width: 498px;
     height: 498px;
     margin: auto;
@@ -24,4 +24,4 @@ h1 {
 
 #cell_1, #cell_2, #cell_3, #cell_4, #cell_5,#cell_6 {
     border-bottom:  0;
-}
+} */
