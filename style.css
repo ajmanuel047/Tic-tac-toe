@@ -7,7 +7,6 @@ h1 {
 #gameboard {
     width: 498px;
     height: 498px;
-    background-color: orange;
     margin: auto;
     margin-top: 15px;
     display: grid;
@@ -17,4 +16,12 @@ h1 {
 
 .cells {
     border: 1px solid;
+}
+
+#cell_1, #cell_2, #cell_4, #cell_5, #cell_7, #cell_8 {
+    border-right-width: 0;
+}
+
+#cell_1, #cell_2, #cell_3, #cell_4, #cell_5,#cell_6 {
+    border-bottom:  0;
 }
