@@ -1,17 +1,21 @@
-/* create a function that keeps track of the state of the
- state of the board
+/* The gameBoard function creates and tracks the current
+state of the gameboard(it creates the current state and 
+also tracks the current state of the board)
+*/
 
- The idea of this function helps you to keep track and
-monitor everything happening on the board
+/* It initializes a 2D array(rows x columns). This 2D array
+represents the gameboard whereby each cell can be accessed
+and monitor individually. This helps in keeping track of all
+moves and state of the board during the game
+*/
 
-As you can see in the below Gameboard function, we have
-access to each cell and know exactly where they are
-on the gameboard
- */
+// The for loops initialize each row as an array and populate the columns,
+// effectively creating a 2D grid structure.
+
 function Gameboard(){
     const rows = 2;
     const columns = 2;
-    const board = [];
+    const board = []; // 2D array to represent the board;
     for(let i = 0; i < rows; i++){
         board[i] = [];
         for(let j = 0; j < columns; j++){
@@ -19,7 +23,8 @@ function Gameboard(){
         }
     }
 
-    const getBoard = board;
-    console.log(getBoard)
+    const getBoard = () => board; // provides access to the 
+    // current state of the board
+
 }
 Gameboard()
