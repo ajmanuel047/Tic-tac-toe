@@ -9,8 +9,8 @@ access to each cell and know exactly where they are
 on the gameboard
  */
 function Gameboard(){
-    const rows = 3;
-    const columns = 3;
+    const rows = 2;
+    const columns = 2;
     const board = [];
     for(let i = 0; i < rows; i++){
         board[i] = [];
@@ -18,6 +18,8 @@ function Gameboard(){
             
         }
     }
-    console.log(board)
+
+    const getBoard = board;
+    console.log(getBoard)
 }
 Gameboard()
