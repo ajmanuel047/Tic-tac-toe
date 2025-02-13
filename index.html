@@ -8,18 +8,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Manuel's Tic-Tac-Toe GameBoard</h1>
-    <!-- <section id="gameboard">
-        <div class='cells' id="cell_1"></div>
-        <div class='cells' id="cell_2"></div>
-        <div class='cells' id="cell_3"></div>
-        <div class='cells' id="cell_4"></div>
-        <div class='cells' id="cell_5"></div>
-        <div class='cells' id="cell_6"></div>
-        <div class='cells' id="cell_7"></div>
-        <div class='cells' id="cell_8"></div>
-        <div class='cells' id="cell_9"></div>
-    </section> -->
+    <h1>Manuel's Tic-Tac-Toe BoardGame</h1>
+    <div class="container">
+        <h2 class="turn"></h2>
+        <h3 class="message"></h3>
+        <div id="start_button">
+          <button>Start Here</button>
+        </div>            
+        <div class="player_names">
+          <h3>Please Enter Your Name</h3>
+          <form>
+            
+            <div>
+              <label for = "player1">Player 1 </label>
+              <input type = "text" maxlength="10" id = "player1" name = "player1">
+            </div>
+            
+            <div>
+              <label for = "player2">Player 2</label>
+              <input type = "text" maxlength="10" id = "player2" name = "player1">
+            </div>
+
+            <div>
+              <label for = "submit">Submit</label>
+              <button type = "button" id="submit">Click Here</button>  
+            </div>
+
+          </form>
+        </div>        
+
+    </div>        
+      <div class="boardContainer">
+        <div class="board"></div>
+      </div>   
+      <div class="footer">
+        <div class="score"><span>Score Board</span>
+          <div class="playerOne">Player 1 : 0</div>
+          <div class="playerTwo">Player 2 : 0</div>
+        </div>
+        <div class="restart">
+          <button class="restart_btn">Restart Game</button>
+        </div>
+      </div>     
+
+    
     <script src="script.js"></script>
 </body>
 </html>

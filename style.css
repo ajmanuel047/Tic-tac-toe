@@ -1,27 +1,133 @@
+body {
+  background-color: #111A24;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 h1 {
     font-size: 2rem;
     text-align: center;
     margin-top: 10px;
+    color: white;
 }
 
-/* #gameboard {
-    width: 498px;
-    height: 498px;
-    margin: auto;
-    margin-top: 15px;
+.container h2 {
+  display: none;
+  justify-content: center;
+  font-size: 2rem;
+  margin-top: 8px;
+}
+
+.board {
     display: grid;
-    grid-template-columns: repeat(3, 166px);
-    grid-template-rows: repeat(3, 166px);
-}
+    height: 360px;
+    width: 360px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    border: 1px solid black;
+    gap: 2px;
+    padding: 2px;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid grey;
+    background: #111A24;
+    cursor: pointer;
+    color: white;
+  }
 
-.cells {
-    border: 1px solid;
-}
+  form {
+    text-align: center;
+    justify-content: center;
+    width: 90%;
+    gap: 6px;
+    margin: auto;
+    margin-top: 10px;
+    display: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: orange; */
+  }
 
-#cell_1, #cell_2, #cell_4, #cell_5, #cell_7, #cell_8 {
-    border-right-width: 0;
-}
+ 
 
-#cell_1, #cell_2, #cell_3, #cell_4, #cell_5,#cell_6 {
-    border-bottom:  0;
-} */
+  input {
+    width: 100px;
+   
+  }
+
+  .container h3 {
+   
+    font-size: 1.9rem;
+  }
+
+  h3 {
+    display: none;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-top: 10px;
+  }
+
+  #start_button {
+    margin: auto;
+    margin-top: 16px;
+    width: 125.5px;
+    
+  }
+
+  #start_button button{      
+    cursor: pointer;    
+  }
+
+  #start_button > button {
+    font-size: 1.5rem;   
+  }
+
+  .restart_btn {
+    height: 35px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: auto;      
+    height: 57.4px;    
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    width: 348px;
+    height: 60px;
+    margin: auto;
+    padding: 7px;
+    margin-top: 10px;
+    border: 2px solid white;
+  }
+
+
+  .score {
+    border: 1px dotted white;
+    padding: 6px;
+    width: 120px;
+    height: 43px;
+    position: relative;
+    
+  }
+
+   span {
+    position: relative;
+    top: -3px;
+    
+  }
+
+  .playerOne, .playerTwo {
+    margin-top: -2px;
+    
+  }
