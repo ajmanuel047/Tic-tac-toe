@@ -145,7 +145,7 @@ function drawMessage (){
   gameScore()
   setTimeout(() => {
      clickCheck = 'undefined';
-     document.querySelector('.restart_btn').style.display = 'flex';
+  
   }, 1);
 }
 
